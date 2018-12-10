@@ -1,1 +1,1 @@
-# hyperledger-fabric-couchdb-query-builder
+# CouchDB query builder for use with Hyperledger Fabric
