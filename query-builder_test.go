@@ -25,10 +25,10 @@ func TestQueryBuilder(t *testing.T) {
 		AddFilter("name", "peckstadt").
 		AddFilter("categories", []string{"a","b"}).
 		AddFilter("singleID", 1).
-		AddCondition("testFieldForCondition", GreaterThanCondition{Value:1}).
-		AddCondition("testFieldForCondition", GreaterThanOrEqualCondition{Value:1}).
-		AddCondition("testFieldForCondition", LessThanCondition{Value:1}).
-		AddCondition("testFieldForCondition", LessThanOrEqualCondition{Value:1}).
+		AddCondition("testFieldForCondition", GreaterThanCondition{Value:"1"}).
+		AddCondition("testFieldForCondition", GreaterThanOrEqualCondition{Value:"1"}).
+		AddCondition("testFieldForCondition", LessThanCondition{Value:"1"}).
+		AddCondition("testFieldForCondition", LessThanOrEqualCondition{Value:"1"}).
 		AddCondition("testFieldForCondition", EqualCondition{Value:"1"}).
 		AddCondition("testFieldForCondition", NotEqualCondition{Value:1}).
 		AddSort("docType", "desc").
