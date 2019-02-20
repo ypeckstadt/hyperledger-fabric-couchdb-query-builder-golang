@@ -2,22 +2,22 @@ package couchdbquerybuilder
 
 // GreaterThanCondition The field is greater than to the argument.
 type GreaterThanCondition struct {
-	Value int `json:"$gt"`
+	Value interface{} `json:"$gt"`
 }
 
 // GreaterThanCondition The field is greater than or equal to the argument.
 type GreaterThanOrEqualCondition struct {
-	Value int `json:"$gte"`
+	Value interface{} `json:"$gte"`
 }
 
 // LessThanCondition The field is less than the argument
 type LessThanCondition struct {
-	Value int `json:"$lt"`
+	Value interface{} `json:"$lt"`
 }
 
 // LessThanOrEqualCondition The field is less than or equal to the argument.
 type LessThanOrEqualCondition struct {
-	Value int `json:"$lte"`
+	Value interface{} `json:"$lte"`
 }
 
 // EqualCondition The field is equal to the argument
